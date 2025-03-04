@@ -5,6 +5,8 @@ import AddTwoNumber from "./components/AddTwoNumbers";
 import SubTwoNumbers from "./components/SubTwoNumbers";
 import MulTwoNumbers from "./components/MulTwoNumbers";
 import Calculator from "./components/Calculator";
+import ParentComponent from "./components/ParentComponent";
+
 
 const App = () => {
   return (
@@ -15,7 +17,10 @@ const App = () => {
       <AddTwoNumber />
       <SubTwoNumbers />
       <MulTwoNumbers/>*/}
-      <Calculator/>
+      {/*<Calculator/>*/}
+      <ParentComponent/>
+      
+
     </div>
   );
 };
