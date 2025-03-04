@@ -1,6 +1,7 @@
 import IncDec from "./components/IncDec";
 import Increment from "./components/Increment";
 import Form from "./components/Form"
+import AddTwoNumber from "./components/AddTwoNumbers"
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       {/*<Increment />*/}
       {/*<IncDec />*/}
       <Form/>
+      <AddTwoNumber/>
     </div>
   );
 };
