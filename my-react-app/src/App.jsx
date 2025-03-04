@@ -6,6 +6,7 @@ import SubTwoNumbers from "./components/SubTwoNumbers";
 import MulTwoNumbers from "./components/MulTwoNumbers";
 import Calculator from "./components/Calculator";
 import ParentComponent from "./components/ParentComponent";
+import OddEvenCheck from "./components/OddEvenCheck";
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <MulTwoNumbers/>*/}
       {/*<Calculator/>*/}
       <ParentComponent/>
+      <OddEvenCheck/>
       
 
     </div>
