@@ -7,8 +7,8 @@ import MulTwoNumbers from "./components/MulTwoNumbers";
 import Calculator from "./components/Calculator";
 import ParentComponent from "./components/ParentComponent";
 import OddEvenCheck from "./components/OddEvenCheck";
-
-
+import LoginForm from "./components/LoginForm";
+import TodoApp from "./components/TodoApp";
 const App = () => {
   return (
     <div>
@@ -19,10 +19,10 @@ const App = () => {
       <SubTwoNumbers />
       <MulTwoNumbers/>*/}
       {/*<Calculator/>*/}
-      <ParentComponent/>
-      <OddEvenCheck/>
-      
-
+      <ParentComponent />
+      <OddEvenCheck />
+      <LoginForm />
+      <TodoApp />
     </div>
   );
 };
