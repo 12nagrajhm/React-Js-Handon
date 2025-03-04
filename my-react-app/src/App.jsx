@@ -7,6 +7,7 @@ import MulTwoNumbers from "./components/MulTwoNumbers";
 import Calculator from "./components/Calculator";
 import ParentComponent from "./components/ParentComponent";
 import OddEvenCheck from "./components/OddEvenCheck";
+import LoginForm from "./components/LoginForm";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       {/*<Calculator/>*/}
       <ParentComponent/>
       <OddEvenCheck/>
+      <LoginForm/>
       
 
     </div>
