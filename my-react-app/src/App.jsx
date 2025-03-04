@@ -9,6 +9,7 @@ import ParentComponent from "./components/ParentComponent";
 import OddEvenCheck from "./components/OddEvenCheck";
 import LoginForm from "./components/LoginForm";
 import TodoApp from "./components/TodoApp";
+import DivideTwoNumbers from "./components/DivideTwoNumbers";
 const App = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ const App = () => {
       <OddEvenCheck />
       <LoginForm />
       <TodoApp />
+      <DivideTwoNumbers/>
     </div>
   );
 };
