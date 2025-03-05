@@ -10,6 +10,7 @@ import OddEvenCheck from "./components/OddEvenCheck";
 import LoginForm from "./components/LoginForm";
 import TodoApp from "./components/TodoApp";
 import DivideTwoNumbers from "./components/DivideTwoNumbers";
+
 const App = () => {
   return (
     <div>
@@ -19,12 +20,13 @@ const App = () => {
       <AddTwoNumber />
       <SubTwoNumbers />
       <MulTwoNumbers/>*/}
-      {/*<Calculator/>*/}
-      <ParentComponent />
+      <Calculator/>
+      {/*<ParentComponent />
       <OddEvenCheck />
       <LoginForm />
       <TodoApp />
-      <DivideTwoNumbers/>
+      <DivideTwoNumbers/>*/}
+
     </div>
   );
 };
