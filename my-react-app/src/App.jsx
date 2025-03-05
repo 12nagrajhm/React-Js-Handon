@@ -12,6 +12,7 @@ import TodoApp from "./components/TodoApp";
 import DivideTwoNumbers from "./components/DivideTwoNumbers";
 import SimpleReact from "./components/SimpleReact";
 import Login from "./Projects/Login";
+import LoginPage from "./project1/LoginPage";
 
 
 const App = () => {
@@ -30,7 +31,8 @@ const App = () => {
       <TodoApp />
       <DivideTwoNumbers/>*/}
       <SimpleReact />
-      <Login/>
+      {/*<Login/>*/}
+      <LoginPage/>
     </div>
   );
 };
