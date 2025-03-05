@@ -11,6 +11,8 @@ import LoginForm from "./components/LoginForm";
 import TodoApp from "./components/TodoApp";
 import DivideTwoNumbers from "./components/DivideTwoNumbers";
 import SimpleReact from "./components/SimpleReact";
+import Login from "./Projects/Login";
+
 
 const App = () => {
   return (
@@ -21,14 +23,14 @@ const App = () => {
       <AddTwoNumber />
       <SubTwoNumbers />
       <MulTwoNumbers/>*/}
-      <Calculator/>
+      <Calculator />
       {/*<ParentComponent />
       <OddEvenCheck />
       <LoginForm />
       <TodoApp />
       <DivideTwoNumbers/>*/}
-      <SimpleReact/>
-
+      <SimpleReact />
+      <Login/>
     </div>
   );
 };
