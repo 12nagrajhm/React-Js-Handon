@@ -1,0 +1,132 @@
+/* 🌟 Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #69ff946d, #6A5ACD);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 🌟 Container */
+.container {
+    width: 450px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: slideIn 0.8s ease-in-out;
+    max-height: 85vh; 
+    overflow: hidden;
+}
+
+/* 🌟 Search Bar - Positioned at the Top */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px; /* Space below search bar */
+}
+
+.search-input {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    border-color: #00ffcc;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 255, 204, 0.9);
+}
+
+/* 🌟 Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 🌟 Buttons */
+button {
+    width: 105%;
+    padding: 8px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px; 
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+/* 🌟 Logout Button (Small & Next to Greeting) */
+
+
+.small-logout-btn {
+    background: #ff4e50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s ease-in-out;
+}
+
+.small-logout-btn:hover {
+    background: #e84142;
+    transform: scale(1.05);
+}
+
+/* 🌟 Product List */
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    gap: 15px; 
+    overflow-x: auto; 
+    padding-bottom: 10px;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
