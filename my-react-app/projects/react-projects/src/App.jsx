@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -6,16 +6,17 @@ import {
   Navigate,
 } from "react-router-dom";
 import AuthProvider, { AuthContext } from "./context/AuthContext";
-import Login from "./components/Login";
-import ProductCatalogue from "./components/ProductCatalogue";
-import Logout from "./components/Logout"; // Import Logout Component
-
+import Login from "./Components/Login";  
+import ProductCatalogue from "./Components/ProductCatalogue";  
+import DebounceSearch from "./Components/DebounceSearch"; 
 const PrivateRoute = ({ element }) => {
   const { isAuthenticated } = useContext(AuthContext);
   return isAuthenticated ? element : <Navigate to="/" />;
 };
 
 const App = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
     <AuthProvider>
       <Router>
@@ -23,9 +24,17 @@ const App = () => {
           <Route path="/" element={<Login />} />
           <Route
             path="/products"
-            element={<PrivateRoute element={<ProductCatalogue />} />}
+            element={
+              <PrivateRoute
+                element={
+                  <>
+                    <DebounceSearch onSearch={setSearchQuery} />
+                    <ProductCatalogue searchQuery={searchQuery} />
+                  </>
+                }
+              />
+            }
           />
-          <Route path="/logout" element={<Logout />} />
         </Routes>
       </Router>
     </AuthProvider>

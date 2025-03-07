@@ -1,18 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 import "./style.css";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const { login } = useContext(AuthContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (username === "admin" && password === "password") {
+    
+    if (username.trim() !== "" && password.trim() !== "") {
+      localStorage.setItem("user", username); // Store the username
+      login();
       navigate("/products");
     } else {
-      alert("Invalid Credentials");
+      alert("Please enter a valid username and password.");
     }
   };
 
