@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../context/AuthContext"; // Ensure this exists
 import "./style.css";
 
 const Login = () => {
@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    
+
     if (username.trim() !== "" && password.trim() !== "") {
       localStorage.setItem("user", username); // Store the username
       login();
