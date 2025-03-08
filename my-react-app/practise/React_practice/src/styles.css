@@ -1,0 +1,67 @@
+/* Default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.
+    3s, color 0.3s;
+    
+}
+  
+  /* Light mode */
+.app-container.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+  
+  /* Dark mode */
+.app-container.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+  
+  /* Home container */
+.home-container {
+    text-align: center;
+    padding: 20px;
+}
+  
+  /* Toggle button */
+.theme-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    transition: 0.3s;
+}
+  
+  .light .theme-button {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+.dark .theme-button {
+    background-color: #fff;
+    color: #000;
+}
+  
+  /* Content box */
+.content-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+  
+  .light .content-box {
+    background-color: #f0f0f0;
+  }
+  
+  .dark .content-box {
+    background-color: #333;
+  }
+  
