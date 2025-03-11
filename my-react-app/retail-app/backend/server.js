@@ -1,12 +1,17 @@
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
+import express from 'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
 
 const app = express();
 app.use(cors());
-app.use(bodyParser.json());
+app.use(bodyParser.json());  // ✅ Corrected this line
 
 let users = [];
+
+// ✅ Fixed GET route to avoid "Cannot GET /" error
+app.get('/', (req, res) => {
+  res.send('Server is running! Use /api/register or /api/login');
+});
 
 app.post('/api/register', (req, res) => {
   const { username, email, password } = req.body;
