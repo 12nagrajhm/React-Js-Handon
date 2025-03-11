@@ -1,0 +1,170 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Center the Form */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  
+  /* Form Box */
+  .form-box {
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .form-box:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Form Title */
+  .form-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Input Fields */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  /* Input Focus Effect */
+  .form-group input:focus {
+    border-color: #2575fc;
+    box-shadow: 0px 0px 5px rgba(37, 117, 252, 0.5);
+  }
+  
+  /* Error Messages */
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Submit Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #2575fc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #1a5bd6;
+    transform: scale(1.05);
+  }
+  
+  /* Toggle between Signup & Login */
+  .toggle-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .toggle-link a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .toggle-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Logout Page Styling */
+  .logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+  }
+  
+  .logout-box {
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 380px;
+    transition: 0.3s;
+  }
+  
+  .logout-box:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Logout Title */
+  .logout-box h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Logout Message */
+  .logout-message {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #ff4b2b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .logout-button:hover {
+    background: #d33b1c;
+    transform: scale(1.05);
+  }
+  
